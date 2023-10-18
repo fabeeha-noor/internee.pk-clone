@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Internie.pk</title>
+</head>
+<body>
+  <nav id="nav" class="lg:sticky top-0 p-5 bg-white shadow md:flex md:items-center md:justify-between sm:w-full">
+    <div class="flex items-center justify-between">
+      <span class="cursor-pointer">
+        <img src="images/logo.png" class="lg:ml-24 ml-5">
+      </span>
+
+      <span class="block mx-2 text-3xl cursor-pointer md:hidden">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul
+      class="md:flex md:items-center text-lg md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 md:space-x-6">
+      <li class="mx-2 my-6 md:my-0">
+        <div class="cursor-pointer group">
+          <div class="flex items-center justify-between ">
+            <a class="text-purple-500 ">
+              Home
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <div class="cursor-pointer group">
+          <div class="flex items-center justify-between space-x-5">
+            <a class="duration-300 menu-hover hover:text-purple-500" href="#open">
+              About
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <div class="cursor-pointer group">
+          <div class="flex items-center justify-between space-x-5">
+            <a class="duration-300 menu-hover hover:text-purple-500" href="#projects">
+              Internships
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <div class="cursor-pointer group">
+          <div class="flex items-center justify-between space-x-5">
+            <a class="duration-300 menu-hover hover:text-purple-500" href="#Achievements">
+              Contact
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <div class="cursor-pointer group">
+          <div class="flex items-center justify-between space-x-5">
+            <a class="duration-300 menu-hover hover:text-purple-500" href="#blogs">
+              LMS
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <div class="cursor-pointer group">
+          <div class="flex items-center justify-between space-x-5">
+            <a class="duration-300 menu-hover hover:text-purple-500" href="#contact">
+              Job Portal
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <button
+      class="px-4 py-3 ml-10 hidden lg:block mr-28 tracking-widest text-white transition duration-300 ease-in-out delay-150 bg-indigo-500 rounded-full hover:-translate-y-1 hover:scale-110 hover:bg-purple-600">
+      Internee Portal
+    </button>
+  </nav>
+  <header class="mb-14 bg-gradient-to-r from-green-400 to-green-700">
+    <div class="lg:ml-28 pt-20 lg:pt-48 ml-5 text-base pb-16 text-white lg:text-lg">
+      <h1>Are you looking for your dream Internship ?</h1>
+      <h1 class="my-5 font-bold text-2xl lg:text-5xl">Join<br>
+        Internee.pk now..!</h1>
+      <h1>Pakistan's Virtual Internship Platform Powered By <span class="text-blue-200">TechvioChats</span></h1>
+      <button class="my-5 text-base border border-2 p-3 rounded-full hover:bg-purple-500">Browse Internships</button>
+    </div>
+  </header>
+  <section>
+    <div class="lg:inline-flex lg:mx-24">
+      <div>
+        <img src="images/founder.png" class="lg:rounded-l-lg hidden lg:block">
+      </div>
+      <div class="mx-5 bg-purple-500 text-white p-5 pb-16 px-9 lg:w-1/2">
+        <h1 class="text-lg lg:text-3xl">Welcome to Internee.pk</h1>
+        <p class="mt-5 text-sm lg:text-lg">Our internship program is designed to give students the
+          opportunity to work on meaningful projects and tasks, while also
+          receiving mentorship and guidance from experienced
+          professionals in the field. Our goal is to help interns develop the
+          skills and knowledge they need to succeed in their careers, while
+          also building a strong network of talented individuals who may
+          become valuable members of our team in the future. If you're
+          looking for a challenging and rewarding internship experience,
+          we invite you to explore our program and <span
+            class="text-blue-700 hover:underline cursor-pointer">Apply.</span></p>
+        <div class="mt-10">
+          <button class="inline-flex my-5 text-base border p-3 rounded-full hover:bg-white hover:text-purple-500">
+            Get to know us</button>
+          <p class="inline-flex mx-3 cursor-pointer hover:underline">Explore Internships</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/CMO.png" class="rounded-r-lg hidden lg:block">
+      </div>
+    </div>
+
+  </section>
+  <section class="my-16">
+    <div class="lg:ml-96">
+      <h1 class="text-2xl ml-5 lg:text-4xl font-bold lg:ml-28">Browse by Categories</h1>
+    </div>
+    <div class="flex items-center justify-center my-10 text-white text-sm space-x-6">
+      <div class="lg:inline-flex lg:space-x-12">
+        <div
+          class="rounded-3xl border border-4 py-7 my-3 px-5 border-purple-500 hover:border-white hover:shadow-2xl w-48  bg-gradient-to-b from-green-500 to-green-600 cursor-pointer">
+          <img src="icons/icon1.svg" class="w-10 h-10 m-3 mx-12">
+          <h1 class="mt-6 mx-2">Website Designing</h1>
+        </div>
+        <div
+          class="rounded-3xl border border-4 py-7 my-3 px-5 border-purple-500 hover:border-white hover:shadow-2xl w-48  bg-gradient-to-b from-green-500 to-green-600 cursor-pointer">
+          <img src="icons/icon2.png" class="w-10 h-10 m-3 mx-12">
+          <h1 class="mt-6">Website Development</h1>
+        </div>
+        <div
+          class="rounded-3xl border border-4 py-7 my-3 px-5 border-purple-500 hover:border-white hover:shadow-2xl w-48  bg-gradient-to-b from-green-500 to-green-600 cursor-pointer">
+          <img src="icons/icon3.png" class="w-10 h-10 m-3 mx-12">
+          <h1 class="mt-6 mx-12">Chatbot</h1>
+          <h1 class="mx-7">Development</h1>
+        </div>
+        <div
+          class="rounded-3xl border border-4 py-7 my-3 px-5 border-purple-500 hover:border-white hover:shadow-2xl w-48  bg-gradient-to-b from-green-500 to-green-600 cursor-pointer">
+          <img src="icons/icon4.png" class="w-10 h-10 m-3 mx-12">
+          <h1 class="mt-6 mx-3">Graphic Designing</h1>
+        </div>
+        <div
+          class="rounded-3xl border border-4 py-7 my-3 px-5 border-purple-500 hover:border-white hover:shadow-2xl w-48  bg-gradient-to-b from-green-500 to-green-600 cursor-pointer">
+          <img src="icons/icon5.svg" class="w-10 h-10 m-3 mx-12">
+          <h1 class="mt-6 mx-3">Mobile Application</h1>
+          <h1 class="mx-7">Development</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-10">
+    <div class="lg:inline-flex">
+      <div
+        class="mx-5 lg:ml-20 bg-gradient-to-b from-green-500 to-lime-600 text-white p-5 px-12 lg:rounded-l-2xl lg:w-2/4">
+        <h1 class="text-xl lg:text-4xl font-bold">
+          Launching tech careers with internships, exposure, and networking.
+        </h1>
+        <p class="mt-7 lg:text-lg text-base">
+          Internee.pk kickstarts student's tech careers with first internships, providing industry exposure, practical
+          skills, and networking opportunities, paving the way for their success in the tech industry.
+        </p>
+        <div class="my-10">
+          <p class="inline-flex mx-3 cursor-pointer hover:underline">Registered users</p>
+          <p class="inline-flex mx-3 my-2 cursor-pointer hover:underline">Opening Internships</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/pic1.png" class="lg:rounded-r-lg lg:mr-40 ml-5 w-11/12">
+      </div>
+  </section>
+  <section class="my-10">
+    <div>
+      <h1 class="text-2xl ml-5 lg:text-4xl font-bold lg:ml-16">Recent Internships</h1>
+      <p class="lg:ml-16 mx-5 my-5 text-slate-500">
+        <span class="text-slate-700 font-semibold underline">Internships came after every two months</span> Grab your
+        internships on your favourite domain to boost up yourself in the field of Computer technology
+      </p>
+    </div>
+    <div class="flex items-center justify-center my-10 space-x-6">
+      <div class="lg:inline-flex lg:space-x-12 space-y-4">
+        <div class="rounded-2xl hover:shadow-2xl cursor-pointer">
+          <img src="images/intern1.png" class="rounded-t-2xl">
+          <h1 class="my-6 mx-2 text-2xl font-bold hover:text-purple-500">Frontend Development</h1>
+          <p class="inline-flex my-2 mx-2"><img src="icons/location.png" class="w-5 h-5 mr-2">Remote</p>
+          <p class="inline-flex ml-10">🕐 1 Month</p>
+          <hr class="my-5 w-72 mx-auto">
+          <button
+            class="px-4 py-3 ml-48 mb-5 tracking-widest text-white transition duration-200 ease-in-out delay-150 bg-indigo-500 rounded-full hover:-translate-y-1 hover:scale-110 hover:bg-purple-600">
+            Apply now
+          </button>
+        </div>
+        <div class="rounded-2xl hover:shadow-2xl cursor-pointer">
+          <img src="images/intern2.png" class="rounded-t-2xl">
+          <h1 class="my-6 mx-2 text-2xl font-bold hover:text-purple-500">Backend Development</h1>
+          <p class="inline-flex my-2 mx-2"><img src="icons/location.png" class="w-5 h-5 mr-2">Remote</p>
+          <p class="inline-flex ml-10">🕐 1 Month</p>
+          <hr class="my-5 w-72 mx-auto">
+          <button
+            class="px-4 py-3 ml-48 mb-5 tracking-widest text-white transition duration-200 ease-in-out delay-150 bg-indigo-500 rounded-full hover:-translate-y-1 hover:scale-110 hover:bg-purple-600">
+            Apply now
+          </button>
+        </div>
+        <div class="rounded-2xl hover:shadow-2xl cursor-pointer">
+          <img src="images/intern3.png" class="rounded-t-2xl">
+          <h1 class="my-6 mx-2 text-2xl font-bold hover:text-purple-500">Chatbot Development</h1>
+          <p class="inline-flex my-2 mx-2"><img src="icons/location.png" class="w-5 h-5 mr-2">Remote</p>
+          <p class="inline-flex ml-10">🕐 1 Month</p>
+          <hr class="my-5 w-72 mx-auto">
+          <button
+            class="px-4 py-3 ml-48 mb-5 tracking-widest text-white transition duration-200 ease-in-out delay-150 bg-indigo-500 rounded-full hover:-translate-y-1 hover:scale-110 hover:bg-purple-600">
+            Apply now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center my-10 space-x-6">
+      <div class="lg:inline-flex lg:space-x-12 space-y-4">
+        <div class="rounded-2xl hover:shadow-2xl cursor-pointer mt-4">
+          <img src="images/intern4.png" class="rounded-t-2xl">
+          <h1 class="my-6 mx-2 text-2xl font-bold hover:text-purple-500">Machine Learning</h1>
+          <p class="inline-flex my-2 mx-2"><img src="icons/location.png" class="w-5 h-5 mr-2">Remote</p>
+          <p class="inline-flex ml-10">🕐 1 Month</p>
+          <hr class="my-5 w-72 mx-auto">
+          <button
+            class="px-4 py-3 ml-48 mb-5 tracking-widest text-white transition duration-200 ease-in-out delay-150 bg-indigo-500 rounded-full hover:-translate-y-1 hover:scale-110 hover:bg-purple-600">
+            Apply now
+          </button>
+        </div>
+        <div class="rounded-2xl hover:shadow-2xl cursor-pointer">
+          <img src="images/intern5.png" class="rounded-t-2xl">
+          <h1 class="my-6 mx-2 text-2xl font-bold hover:text-purple-500">Mobile App Development</h1>
+          <p class="inline-flex my-2 mx-2"><img src="icons/location.png" class="w-5 h-5 mr-2">Remote</p>
+          <p class="inline-flex ml-10">🕐 1 Month</p>
+          <hr class="my-5 w-72 mx-auto">
+          <button
+            class="px-4 py-3 ml-48 mb-5 tracking-widest text-white transition duration-200 ease-in-out delay-150 bg-indigo-500 rounded-full hover:-translate-y-1 hover:scale-110 hover:bg-purple-600">
+            Apply now
+          </button>
+        </div>
+        <div class="rounded-2xl hover:shadow-2xl cursor-pointer">
+          <img src="images/intern6.png" class="rounded-t-2xl">
+          <h1 class="my-6 mx-2 text-2xl font-bold hover:text-purple-500">Graphic Design</h1>
+          <p class="inline-flex my-2 mx-2"><img src="icons/location.png" class="w-5 h-5 mr-2">Remote</p>
+          <p class="inline-flex ml-10">🕐 1 Month</p>
+          <hr class="my-5 w-72 mx-auto">
+          <button
+            class="px-4 py-3 ml-48 mb-5 tracking-widest text-white transition duration-200 ease-in-out delay-150 bg-indigo-500 rounded-full hover:-translate-y-1 hover:scale-110 hover:bg-purple-600">
+            Apply now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center">
+      <button
+        class="p-6 my-5 tracking-widest text-white transition duration-200 ease-in-out delay-150 bg-indigo-500 rounded-full hover:-translate-y-1 hover:scale-110 hover:bg-purple-600">
+        Browse internships
+      </button>
+    </div>
+  </section>
+  <section class="bg-green-200">
+    <div class="flex items-center justify-center">
+      <h1 class="text-3xl font-bold my-28">
+        Happy Internee Reviews
+      </h1>
+    </div>
+  </section>
+  <section class="mb-14 bg-gradient-to-r from-green-400 to-green-700">
+    <div class="lg:ml-28 pt-16 lg:pt-28 ml-5 text-base pb-16 text-white lg:text-lg">
+      <h1 class="my-5 font-bold text-2xl lg:text-3xl">Internships after every two
+        months</h1>
+      <h1>Introducing Internee.pk, the ultimate platform designed to turbocharge the IT <br>
+        sector in Pakistan! We recognize the immense potential of talented individuals in <br>
+        the country and aim to bridge the gap between them and the thriving IT <br>
+        industry. Internee.pk offers a comprehensive range of virtual internship <br>
+        opportunities exclusively in the IT field.</h1>
+    </div>
+  </section>
+  <footer class="bg-white hidden lg:block">
+    <img src="images/logo.png" class="ml-10">
+    <div class="mx-auto max-w-screen px-4 py-16 lg:px-8">
+      <div class="lg:flex lg:items-start lg:gap-8">
+        <div class="mt-8 grid gap-12 lg:grid-cols-5 lg:gap-y-5">
+          <div class=" lg:col-span-2  border w-72 lg:w-96 border-gray-100 rounded-lg p-7 bg-cyan-100">
+            <form class="w-full">
+              <h1 class="mb-3 text-lg font-semibold">Get Updates About Internships</h1>
+              <label for="UserEmail" class="sr-only">Email </label>
+              <div class="border border-gray-100 p-2 flex rounded-xl bg-white">
+                <input type="email" id="UserEmail" placeholder="👤  |  yourname@gmail.com"
+                  class="w-full border-none p-3 sm:text-sm mr-3" />
+                <button class=" w-16 text-2xl rounded-full text-black sm:w-auto ">
+                  ➢
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-span-2 sm:col-span-1">
+            <ul class="text-lg mr-12">
+              <li>
+                <a href="#" class="text-gray-700">
+                  🌐  www.internee.pk
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-700">
+                  📞 +92 345 3191638
+                  </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-700">
+                  📧  info@internee.pk
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-2 sm:col-span-1">
+            <p class="font-medium text-gray-900">Company</p>
+            <ul class="text-lg">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Internships
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-2 sm:col-span-1">
+            <p class="font-medium text-gray-900">Resources</p>
+            <ul class="text-lg">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Discord Server
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Podcast
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="bg-green-500 p-5">
+    <div class="inline-flex">
+<div class="my-6 flex justify-center items-center ">
+  <p class="lg:mr-96 text-white text-sm">Copyright © Internee.pk 2023</p>
+  <a
+  href="#!"
+  type="button"
+  class="m-1 h-9 w-9 rounded-full border-2 uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+  data-te-ripple-init
+  data-te-ripple-color="dark">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="mx-auto h-full w-4"
+    fill="currentColor"
+    viewBox="0 0 24 24">
+    <path
+      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+  </svg>
+</a>
+<a
+  href="#!"
+  type="button"
+  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+  data-te-ripple-init
+  data-te-ripple-color="light">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="mx-auto h-full w-4"
+    fill="currentColor"
+    viewBox="0 0 24 24">
+    <path
+      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+  </svg>
+</a>
+<a
+  href="#!"
+  type="button"
+  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+  data-te-ripple-init
+  data-te-ripple-color="light">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="mx-auto h-full w-4"
+    fill="currentColor"
+    viewBox="0 0 24 24">
+    <path
+      d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+      fill-rule="evenodd"
+      clip-rule="evenodd" />
+  </svg>
+</a>
+<a
+  href="#!"
+  type="button"
+  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+  data-te-ripple-init
+  data-te-ripple-color="light">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="mx-auto h-full w-4"
+    fill="currentColor"
+    viewBox="0 0 24 24">
+    <path
+      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+  </svg>
+</a>
+<a
+  href="#!"
+  type="button"
+  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+  data-te-ripple-init
+  data-te-ripple-color="light">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="mx-auto h-full w-4"
+    fill="currentColor"
+    viewBox="0 0 24 24">
+    <path
+      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+  </svg>
+</a>
+<a
+  href="#!"
+  type="button"
+  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+  data-te-ripple-init
+  data-te-ripple-color="light">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="mx-auto h-full w-4"
+    fill="currentColor"
+    viewBox="0 0 24 24">
+    <path
+      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+  </svg>
+</a>
+</div>
+    </div>
+  </footer>
+  <script>
+    //for navbar button start
+    function Menu(e) {
+      let list = document.querySelector("ul");
+      e.name === "menu"
+        ? ((e.name = "close"),
+          list.classList.add("top-[80px]"),
+          list.classList.add("opacity-100"))
+        : ((e.name = "menu"),
+          list.classList.remove("top-[80px]"),
+          list.classList.remove("opacity-100"));
+    }
+    //for navbar button end
+  </script>
+</body>
